@@ -26,6 +26,17 @@ class Product
     protected $price;
 
     /**
+    * @MongoDB\Int
+    */
+    protected $did;
+
+    /**
+    * @MongoDB\String
+    */
+    protected $comments;
+
+
+    /**
      * Get id
      *
      * @return id $id
@@ -77,5 +88,52 @@ class Product
     public function getPrice()
     {
         return $this->price;
+    }
+
+
+
+
+    /**
+     * Set did
+     *
+     * @param int $did
+     * @return self
+     */
+    public function setDid($did)
+    {
+        $this->did = $did;
+        return $this;
+    }
+
+    /**
+     * Get did
+     *
+     * @return int $did
+     */
+    public function getDid()
+    {
+        return $this->did;
+    }
+
+    /**
+     * Set comments
+     *
+     * @param string $comments
+     * @return self
+     */
+    public function setComments($comments)
+    {
+        $this->comments = $comments;
+        return $this;
+    }
+
+    /**
+     * Get comments
+     *
+     * @return string $comments
+     */
+    public function getComments()
+    {
+        return $this->comments;
     }
 }

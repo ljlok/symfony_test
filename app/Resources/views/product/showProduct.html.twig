@@ -1,0 +1,12 @@
+{# app/Resources/views/product/showProduct.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Product Info </h1>
+{% for item in product %}
+<li><a href="#">{{ item.name }} </a> 
+    {{ item.price }}
+    {{ item.comments }}
+</li>
+{% endfor %}
+{% endblock %}

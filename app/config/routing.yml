@@ -5,3 +5,7 @@ store:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+product:
+    resource: "@StoreBundle/Controller/"
+    type:     annotation
